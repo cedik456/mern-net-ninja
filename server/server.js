@@ -4,6 +4,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const methodOverride = require("method-override");
 const workoutRoutes = require("./routes/workouts");
+const cors = require("cors");
 
 // express app
 const app = express();
@@ -12,6 +13,7 @@ const app = express();
 
 app.use(express.json()); // automatically parses incoming json
 app.use(methodOverride("_method"));
+app.use(cors());
 
 app.use((req, res, next) => {
   console.log(req.path, req.method);
