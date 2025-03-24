@@ -7,10 +7,10 @@ const Navbar = () => {
       <div className="container mx-auto py-8">
         <div className="container flex justify-between">
           <Link to="/">
-            <h1>Workout Buddy</h1>
+            <h1 className="text-xl">Workout Buddy</h1>
           </Link>
           <Link to="about">
-            <h1>About</h1>
+            <h1 className="text-base">About</h1>
           </Link>
         </div>
       </div>
